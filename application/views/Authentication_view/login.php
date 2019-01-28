@@ -1,7 +1,7 @@
 <!DOCTYPE html>  
  <html>  
  <head>  
-      <title>Webslesson | <?php echo $title; ?></title>  
+      <title> <?php echo $title; ?></title>  
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />  
      <link rel="stylesheet" href="<?php echo base_url(); ?>asset/style.css">
      <style>
@@ -45,10 +45,12 @@
           background-color:darkturquoise;
           color:black;
           font-weight:bold;
+          box-shadow: 8px 8px 6px  #aaaaaa;
      }
      .login{
           position:relative;
           top:-10px;
+          
      }
      </style>
      </head>  
