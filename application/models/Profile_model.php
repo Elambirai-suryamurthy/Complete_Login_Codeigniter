@@ -29,7 +29,6 @@ function add($data)
        
    } 
    public function getEmp() {     
-     
     $this->db->select(array('e.sno', 'e.name as name', 'e.email', 'e.password', 'e.city'));
     $this->db->from('clist e');  
     $this->db->where('e.sno', $this->_sno);     
