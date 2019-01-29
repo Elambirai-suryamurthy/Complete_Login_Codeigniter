@@ -15,8 +15,12 @@
     </head>
     <body>
         <div><?php echo $error; ?></div>
-    <form  name="form1" id="form1" method="post" >  
+    <form  name="form1" id="form1" method="post"action="<?php print site_url();?>authentication/register/" >  
  <table width="200" border="0" align="center">  
+ <tr>  
+   <td>SNO:</td>  
+   <td><input type="text" name="sno" id="sno"> <font color="#FF0000"><?php echo form_error('name');?></font></td>  
+  </tr>
   <tr>  
    <td>Name:</td>  
    <td><input type="text" name="name" id="name"> <font color="#FF0000"><?php echo form_error('name');?></font></td>  

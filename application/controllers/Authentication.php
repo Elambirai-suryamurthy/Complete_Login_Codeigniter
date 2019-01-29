@@ -75,7 +75,7 @@ class Authentication extends CI_Controller {
          {
           $data['title'] = 'My register'; 
         
-
+               $sno=$this->input->post('sno');
               $name=$this->input->post('name');
               $e=$this->input->post('email');
               $p=$this->input->post('password');
@@ -90,11 +90,11 @@ class Authentication extends CI_Controller {
               }
               else
               {
-              $que=$this->db->query("insert into clist values('','$name','$e','$ep','$c')");
+              $que=$this->db->query("insert into clist values('$sno','$name','$e','$ep','$c')");
               
               $data['error']="<h3 style='color:blue'>Your account created successfully</h3>";
               }			
-              $this->load->view('authentication_view/register',$data);	          
+              $this->load->view('authentication_view/login',$data);	          
               
         
          }

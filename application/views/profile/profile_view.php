@@ -16,7 +16,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <a  href="<?php print site_url();?>/user_profile/view_load"  class="pull-right btn btn-primary btn-xs" style="margin-bottom: 5px;"><i class="fa fa-plus"></i> Add Employee</a>                
+        <a  href="<?php print site_url();?>user_profile/view_load"  class="pull-right btn btn-primary btn-xs" style="margin-bottom: 5px;"><i class="fa fa-plus"></i> Add Employee</a>                
     </div>
 </div>
 
@@ -46,9 +46,9 @@
     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Click me
     <span class="caret"></span></button>
     <ul class="dropdown-menu">
-      <li><a title="Display" href="<?php print site_url();?>/user_profile/display/<?php print $element['sno'];?>">view</a></li>
-      <li><a title="Edit" href="<?php print site_url();?>/user_profile/edit/<?php print $element['sno'];?>">edit</a></li>
-      <li><a title="Delete" href="<?php print site_url();?>/delete/<?php print $element['sno'];?>" onClick="return confirm('Are you sure you want to delete?')" >delete</a></li>
+      <li><a title="Display" href="<?php print site_url();?>user_profile/display/<?php print $element['sno'];?>">view</a></li>
+      <li><a title="Edit" href="<?php print site_url();?>user_profile/edit/<?php print $element['sno'];?>">edit</a></li>
+      <li><a title="Delete" href="<?php print site_url();?>user_profile/delete/<?php print $element['sno'];?>" onClick="return confirm('Are you sure you want to delete?')" >delete</a></li>
     </ul>
   </div>
 </div>

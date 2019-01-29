@@ -22,18 +22,18 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <a href="<?php print site_url();?>" class="pull-right btn btn-primary btn-xs" style="margin: 2px;;"><i class="fa fa-list"></i> List</a>
+        <a href="<?php print site_url();?>/user_profile/" class="pull-right btn btn-primary btn-xs" style="margin: 2px;;"><i class="fa fa-list"></i> List</a>
        
     </div>
 </div>
 
 <div class="row">   
     <div class="col-lg-12">
-        <p><strong>First Name: </strong><?php print $sno?></p>
-        <p><strong>Last Name: </strong><?php print $name?></p>
+        <p><strong>sno: </strong><?php print $sno?></p>
+        <p><strong>Name: </strong><?php print $name?></p>
         <p><strong>Email: </strong><?php print $email?></p>
-        <p><strong>Address: </strong><?php print $password?></p>
-        <p><strong>Phone: </strong><?php print $city?></p>
+        <p><strong>password: </strong><?php print $password?></p>
+        <p><strong>city: </strong><?php print $city?></p>
            
     </div>
 </div>

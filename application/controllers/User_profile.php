@@ -32,22 +32,14 @@ function index()
         redirect('user_profile/');
       }
      
-        public function display($sno) {
-            // $data = array(
-            //     'table_name'=>'clist', 
-            //     'sno' => $this->input->post('sno'), 
-            //     'name' => $this->input->post('name'), 
-            //     'email' => $this->input->post('email'), 
-            //     'password' => $this->input->post('password'), 
-            //     'city' => $this->input->post('city') 
-            // );
-            // $this->emp->getEmp($data);
-            // redirect('user_profile/');
-            $data['page'] = 'emp-display';
-            $data['title'] = 'Employee Display | TechArise';
-           // $this->emp->setSno($sno);
-            $data['empInfo'] = $this->emp->getEmp();
-            $this->load->view('profile/display', $data);
+        public function display($sno='') {
+          
+          $data['page'] = 'emp-display';
+          $data['title'] = 'Employee Display | TechArise';
+          $this->emp->setSno($sno);
+          $data['empInfo'] = $this->emp->getEmp();
+          $this->load->view('profile/display', $data);
+      
         }
       function edit()
       {
@@ -69,6 +61,11 @@ function index()
     
 
     }
+    public function delete($sno='') {
+      $this->emp->setSno($sno);
+      $this->emp->deleteEmp();
+      redirect('user_profile/');
+  }
 
 
   } 
